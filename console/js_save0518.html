@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+    //存款多少
+    let save = parseInt(prompt('目前存款金額 ?',0));
+    console.log('存款=>' + save);
+
+    //後續動作 領錢>轉帳
+    let action = parseInt(prompt('後續動作 1.領錢 2.轉帳 ?',0));
+    console.log('動作 = >' + action ); 
+
+
+    switch (action) { 
+        case 1:
+            console.log("領錢中");
+            let getMoney = parseInt(prompt('領多少錢?',0));
+            console.log('領錢金額=>'+ getMoney );
+            if (save>getMoney) { 
+                consloe.log("成功領錢");
+                save = save + getMoney;
+                console.log('最終存款=>'+save);
+            } else {
+                console.log("餘額不足,本次無法領錢!");
+                console.log('最終存款=>'+save);
+            }           
+            break;
+
+        case 2:
+            console.log("轉帳中");
+            let transfeMoney = parseInt(prompt("轉多少錢?",0))
+            console.log('轉帳金額=>'= transfeMoney);
+            let transferID = prompt("轉入帳號?",0);
+            console.log('轉入帳號=>'+transferID);
+            
+            break;
+
+        default:
+            break;
+    }
+
+    </script>
+    
+</body>
+</html>
