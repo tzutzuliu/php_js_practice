@@ -8,7 +8,16 @@
 </head>
 <body>
     <script>
+        //0601_巢狀迴圈
+        //兩層迴圈
 
+        //畫星星 
+        //input = 5 時
+        //1*****
+        //2****
+        //3***
+        //4**
+        //5*
 
         //第一層input 5 =>5層
         //步驟一
@@ -41,15 +50,61 @@
                 document.write('*');
 
         }
-
             document.write("<br>");
-
         }
 
 
+        //for loop 星星練習3
+        //input = 5
+        //*****
+        //*****
+        //*****
+        //*****
+        //*****
+
+        //方法一
+
+        /*let input = 5;
+        for(let i = 0 ; i < input ; i++){
+            console.log(i + "*****");
+            document.write(i)
+        }*/
 
 
+        //方法二 *30
+        let input =5;
+        let inputJ = 30;
+        for(let i = 0 ; i < input ; i++){
+            // 1.蓋大樓
+            // document.write(i);
+            // 2.畫input數量的星星
+            for(let j = 0 ; j < inputJ ; j++){
+                // document.write(j);
+                document.write('*');
+            }
+            document.write('<br>');
 
+        }
+
+        //練習題
+        //for loop 星星練習
+        //input = 5 
+        //  * 
+        // ***
+        //*****
+        //******
+        //********
+
+        sum = '';
+        input = 5;
+        for(let i = 0 ; i < input ; i++){
+            // sum = sum + '*';
+            sum += '*';
+            // console.log(`${i+1} => ${sum}`);
+            document.write(`${i+11} => ${sum} <br>`)
+            // document.write(`${i} => ${sum} <br>`)
+            // document.write(`${sum} <br>`)
+        }
 
 
     </script>

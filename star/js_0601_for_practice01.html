@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //巢狀迴圈意即兩層迴圈
+
+
+        //練習一
+        //第一層 input=5(五層)
+        //input = 5;
+        /* for(let i = 0; i < input; i++) {
+            document.write(i);
+        }*/
+
+        //兩層迴圈寫法
+        //input = 5;
+        //for(let i = 0; i < input; i++){
+            //document.write(i);
+
+            //for(let j = 0; i>=j; j++){
+                //document.write(j);
+                //document.write('*');
+           // }
+        //}
+
+        //document.write('<br>');
+
+
+        //練習二
+        //步驟二(另一種寫法設一個tmp丟進去)
+        //input = 10;
+        //tmp = input;
+        //for(let i = 0; i < input; i++) {
+            //console.log(tmp);
+            //console.log('old tmp=>' +tmp);
+            //tmp--; 的意思等於 --> tmp = tmp -1;的意思
+            //document.write(i);
+        //  }
+
+        //練習二之二
+        //巢狀迴圈 -->for
+        //     for (let j = 0; j <= input ; j++) {
+        //         // document.write(j);
+        //         document.write('*');
+        //     }
+        //     // 2. end
+        //     document.write("<br>");
+        // }
+
+
+
+        //練習三    
+        //for loop 星星練習3
+        // input = 5
+        // *****
+        // *****
+        // *****
+        // *****
+        // *****
+
+        //metho 1:
+        //let input = 5;
+        //for (let i = 0; i < input; i++){
+            //console.log(i + "****");
+            //document.write(i);
+        //}
+
+        
+        //method2:
+
+        //let input = 5;
+        //let inputJ = 30;
+        //for(let i = 0 ; i < input ; i++){
+            //    document.write(i);
+        //2.畫inputJ數量的星星
+            //for(let j = 0 ; j < inputJ ; j++){
+                //document.write(j);
+            //    document.write('*');
+        //}
+            //document.write('<br>');
+
+        //}
+
+                
+        //method2-2:
+
+        //let input = 5;
+        //let inputJ = 30;
+        //for(let i = 0 ; i < input ; i++){
+                //document.write(i);
+        //2.畫inputJ數量的星星
+            //for(let j = 0 ; j < inputJ ; j++){
+                //印數字出來
+                //document.write(j);
+                //印星星出來↓(會有30顆)
+                //document.write('*');
+        //}
+            //記得換行
+            //document.write('<br>');
+
+        //}
+
+
+        
+        // 練習三
+        //for loop 星星練習3(正三角)
+        // input = 5
+        //     *
+        //    ***
+        //   *****
+        //  *******
+        // *********
+
+        // let input = 5;
+        // for (let i = 1; i <= input; i++) {
+        //     // console.log(i);
+        //     document.write(i);
+        //     // 真實寫入星星的地方
+
+        //     // 空格
+        //     for (let j = 1; j <= (input - i); j++) {
+        //         // console.log(j);
+        //         // document.write('j');
+                  //空格:&nbsp; (php裡也是如此)
+        //         document.write('&nbsp;&nbsp;');
+        //     }
+        //     // 空格 end
+
+        //     // 星星
+        //     for (let k = 1; k <= (2 * i - 1); k++) {
+        //         // document.write(k);
+        //         document.write('*');
+        //     }
+
+        //     // 星星 end
+        //     document.write('<br>');
+        // }
+
+
+        //練習四
+        //這題雖是菱形但可以中間切分為半,看成一個正三角及倒三角去組合成
+        //for loop 星星練習四
+        // input = 5
+        //     *
+        //    ***
+        //   *****
+        //  *******
+        // *********
+        //  *******
+        //   *****
+        //    ***
+        //     *
+
+
+        //上半部(正三角)
+        let input = 6;
+        for (let i = 1; i <= input; i++) {
+            //console.log(i);
+            //document.write(i);
+            // 真實寫入星星的地方
+
+            // 空格
+            for (let j = 1; j <= (input - i); j++) {
+                //console.log(j);
+                //document.write('j');
+                document.write('&nbsp;&nbsp;');
+            }
+            // 空格 end
+
+            // 星星
+            for (let k = 1; k <= (2 * i - 1); k++) {
+                //document.write(k);
+                document.write('*');
+            }
+
+            // 星星 end
+            document.write('<br>');
+        }
+
+        // 下半部(倒三角)
+        for (i = input; i > 1; i--) {
+            // document.write(i);
+            // 空格
+            for (j = 0; j <= (input - i); j++) {
+                // document.write(j);
+                document.write('&nbsp;&nbsp;');
+            }
+            // 空格 end
+
+            // 列印*
+            for (k = (((i - 1) * 2) - 1); k > 0; k--) {
+                // document.write(k);
+                document.write('*');
+            }
+
+            // 列印* end
+            document.write('<br>')
+
+
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
