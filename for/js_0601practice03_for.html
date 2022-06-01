@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--20220601 js_for迴圈-->
+    <!--重複多次-->
+
+    <!--重複多次跑很多圈用for迴圈-->
+    <!--方法1-->
+    <!--如果只有1-2次大可以console直接顯示-->
+    <!--但如果是大量的話必須用迴圈來解決才會快-->
+
+    <script>
+        console.log(1);
+        console.log(2);
+        console.log(3);
+        console.log(4);
+        console.log(5);
+        console.log(6);
+        console.log(7);
+        console.log(8);
+        console.log(9);
+        console.log(10);
+    </script>
+
+    //方法二 使用迴圈
+    //從1開始跑到10結束
+    //每次都加上1
+    //以下寫法標準寫法:
+    for (let i = 1; i <=10; i++){
+        console.log(i);
+    }
+
+    <script>
+
+    //從1開始 10結束 每次+1
+
+    for (let i = 1; i <=10; i++){
+        console.log(i);
+    }
+    </script>
+
+
+
+    <script>
+        //畫星星 --迴圈練習二
+        //輸入一個數顯示圖
+        // ******
+        // ***
+        // **
+        // *
+
+        sum = '';
+        input = 5;
+        for(let i = 0; i < input; i++){
+            sum += '*';
+            document.write(`${i+11} => ${sum}<br>`)
+        }
+
+    
+        //teacher
+        /*sum = '';
+        input = 5;
+        for(let i = 0 ; i < input ; i++){
+            // sum = sum + '*';
+            sum += '*';
+            // console.log(`${i+1} => ${sum}`);
+            document.write(`${i+11} => ${sum} <br>`)
+            // document.write(`${i} => ${sum} <br>`)
+            // document.write(`${sum} <br>`)
+        }*/
+
+
+    </script>
+
+
+
+    
+</body>
+</html>
