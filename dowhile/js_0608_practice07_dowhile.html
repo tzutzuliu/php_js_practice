@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 三種迴圈的格式寫法
+        // do while
+        // 至少做一次 ===>do while 首要條件就是不管怎樣都會執行一次
+        // let i = 0;
+        // do {
+        //     console.log(i);
+        //     i++;
+        // } while (i< 10);
+
+        //for的格式:(起始值;條件;結束值;) //最最最常用到的迴圈寫法
+        // for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+
+        // }
+
+        // // while //比較適合用在我不知道我會跑幾次這迴圈
+        // // 可以寫document.write(i) 的意思是輸出 i 這個變數的值，輸出完後接著執行 i++，則變數 i 就會 +1
+
+        // let i = 0;
+        // while (condition) {
+
+        //     i++;
+        // }
+       //我是空行空行空行空行
+
+    //js---do..while
+
+    let input = 10 ;
+    let i =1 ;
+    let sum =0 ;
+
+    do { 
+        if(i < 4){
+            sum = 300;
+        }else{
+            sum = sum + 10;
+        }
+
+        if (i==1){
+            one = 300;
+
+        }else if (i == 2 || i == 3 ){
+            one = 0;
+        }
+        else {
+            one = 10;
+        }
+        document.write(`第${i}次消費`);
+        i++;
+    } while (i <= input);
+
+    </script>
+    
+
+
+</body>
+</html>

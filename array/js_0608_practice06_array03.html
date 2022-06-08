@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--老師上課舉例 大胃王挑戰賽-->
+
+    <script>
+
+    //練習一:40元壽司 每五分鐘吃一盤 總共帶4000元 最多可以吃90min
+
+
+
+    //練習二
+    //0-30min  五分鐘吃一盤
+    //31-60min 六分鐘吃一盤
+    //61--90   七分鐘吃一盤
+
+    let money = 3000;
+        let i = 1;
+        let food = 30;
+        let name = "kai";
+        let min = 0;
+
+        // document.write(`00：00 吃了1盤  2970<br>`);
+        // document.write(`05：00 吃了2盤  2940<br>`);
+        document.write(`總共帶${money}<br>`);
+
+        //要有錢 才可以吃   
+        while (money > food) {
+            money = money - food;
+            //money -= food;
+            document.write(`${name}--${min}：00 吃了${i}盤 餘額=> ${money}<br>`);
+
+            if (min < 30) {
+                min = min + 5;
+            } else if (min < 60) {
+                min = min + 6;
+            } else {
+                min = min + 7;
+            }
+
+
+            if (min > 90) {
+                document.write('<hr>');
+                document.write('你已成為傳說 老闆要下班了<br>');
+
+                break;
+            }
+
+            i++;
+        }
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

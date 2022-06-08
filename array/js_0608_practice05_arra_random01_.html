@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--老師上課舉例:本期開獎號碼-->
+
+    <script>
+        //math random 就是取0-1的小數點
+        //正整數 random *11 的max是10
+        //0.99*11=> 可無條件件捨去整數10
+        //Math.floor(Math.random() * (max - min +1)) +min 
+        // max 6 - min 1+1 
+        //Math.floor(Math.random()*2); //回傳0或1
+
+
+        //再舉另一個例子
+        //Math.floor(Math.random()*3); *3時會是 0 1 2 (不會有3) 所以回傳0或1或2
+        //Math.floor(Mathh.random()*5); *5時會是 0 1 2 3 4 (不會有4) 所以回傳的會是0或1或2或3或4 
+        //Math.floor(Math.random()*50); *50(只會到49) 0 1 2 3 .... 48 49 所以回傳的會是0或1或2或3或4...或49
+
+
+        let result = Math.floor(Math.random());
+        console.log(result);
+
+
+        //array push 
+        //let myArr =[1,2,3];
+        //Today[1,2,3];
+        //console.log('myArr',myArr);
+        //myArr.push(4);
+        //console.log('myArr push',myArr);
+
+
+        // array indexOf
+        // let myArr = [1,2,3];
+        // console.log('myArr',myArr);
+        // console.log(myArr.indexOf(1));
+        // console.log(myArr.indexOf(2));
+        // console.log(myArr.indexOf(3));
+        // console.log(myArr.indexOf(4));
+        // console.log(myArr.indexOf(5));
+
+         //array basic
+
+        //array 邏輯 本質解決變數不夠
+        //我們班有25位同學
+        //方法一 
+        // let student1 = 1;
+        // let student2 = 2;
+        // let student3 = 3;
+
+        // 方法二 array
+        // let studentArray = [1,2,3,4,5];
+
+        //while迴圈 樂透開獎
+        //ex: 1-49六個大樂透
+        //key不能重複
+
+        //1. round 1-49
+        // Math random
+
+        //min 有包括 max沒包括
+        //Math.floor(Math.random() * (max - min)) +min;
+
+        //如果+1的話
+        //Math.floor(Math.random() * (max - min)+1) +min;
+
+        //document.write(num)
+
+        //要跑6次的樂透開獎
+
+        let i = 1; //顯示第幾次開獎
+        let lottery =[];
+
+        //while (lottery.length <6){
+        while (lottery.length < 6){
+            //這串就是min 1 - max 49
+            let num = Math.floor(Math.random()*(49 - 1 + 1)) +1;
+
+
+
+            //判斷是否存在array
+            let flag = lottery.indexOf(num);
+
+            //設定if條件 如果-1不存在的話
+            if(flag <0){
+                
+                lottery.push(num);
+
+                //顯示出array lottery.length長度
+                document.write(`第${i}次開獎 第${lottery.length}個號碼=>${num}<br>`);
+
+            }
+            i++; 
+
+
+        }
+
+        console.log(lottery);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
