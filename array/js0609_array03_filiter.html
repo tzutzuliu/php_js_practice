@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    //map() 特色
+    //會透過函式內所回傳的值組合成一個新的陣列,並不會改變原陣列,回傳數量會等於原始陣列的長度,如果不回傳則是 undefined
+    //簡單來說就是我們若用陣列使用 map() 方法呼叫函式的話，就可以讓陣列中每個元素執行完該函式後，將每個元素的執行結果回傳到一個新的陣列。
+
+    //=>箭頭的 左邊 就是 參數 右邊就是執行結果
+    //function可以用 =>"箭頭"來替代表示
+
+    //原寫法可以這樣
+    //let arr2 = [1,3,5,7,9];
+    //let mapArr = arr2.map(function(value)){
+    //    return value *40;
+    //}
+
+    //後寫法改為
+    //let mapArr = arr2.map(value) => value *40;
+    //因為把function 改為"箭頭",return又收回減少
+    //總而言之可以用箭頭函式讓code看起來為精簡
+
+    //0609上課練習一
+    //假設發年終獎金
+    //[1-3] 20個月
+    //[4-5] 40個月 
+
+    //let moneyArr = [1, 2, 3, 9, 8, 7, 1, 2, 4, 5];
+    //let mapMoneyArr = moneyArr.map(function(value){
+    //    if (value >= 4){
+    //        return value * 40;
+    //    } else {
+    //        return value * 20;
+    //    }
+    //});
+
+    //console.log('money',moneyArr);
+    //console.log('mapMoneyArr',mapMoneyArr);
+
+    
+    // array filter的用法
+    // 概念:[1,2,3,4,5,6,7,8,9,10] => [2 4 6 8 10]
+
+
+    // foreach 寫法 
+    // let filterArr = [1,2,3,4,5,6,7,8,9,10];
+    // let newFilterArr = [];
+    // filterArr.forEach(value => {
+    //     if(value % 2 == 0){
+    //         newFilterArr.push(value);
+    //     }
+    // });
+
+    // console.log('filterArr',filterArr);
+    // console.log('newFilterArr',newFilterArr); //產生新的filter
+
+    //filter reutrn 條件 vs map return value運算
+    //let filterArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    //let newFilterArr = filterArr.filter(function (value) {
+    // return (value % 2 == 0);
+    // return (value % 2 == 1);
+    //return (value >= 4);
+    //});
+
+    //console.log('filterArr', filterArr);
+    //console.log('newFilterArr', newFilterArr);
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

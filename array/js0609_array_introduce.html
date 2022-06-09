@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--JS JavaScript陣列array練習(自己練習)-->
+    <!--php 都用echo-->
+    <!--js  都用console.log-->
+    <!--寫 JavaScript 需要檢視運作是否正確時候，都會使用 console.log 來檢視輸出或運算的值-->
+
+    <script>
+    //1.檢驗是否為陣列
+    //Array,isArray(object)
+
+    //2.複製陣列寫法
+    //const arrCopy = [...arr]
+
+    //3.建立陣列
+    //let arr = [element0,element1,......,elementN] 
+
+    //4.建立一個新的陣列
+    //let arr = new Array(arrayLength)
+
+    //5.從陣列中隨機抽取一個元素（sample element in array)
+    //var rand = myArray[Math.floor(Math.random()* myArray.length)];
+
+    //6.map() 特色
+    //會透過函式內所回傳的值組合成一個新的陣列,並不會改變原陣列
+    //回傳數量會等於原始陣列的長度,如果不回傳則是 undefined
+    //簡單來說 我們若用陣列使用 map() 方法呼叫函式的話
+    //就可以讓陣列中每個元素執行完該函式後，將每個元素的執行結果回傳到一個新的陣列。
+    //Map寫法:
+    //let arr2 = [1,3,5,7,9];
+    //let mapArr = arr2.map(function(value)){
+    //    return value *40;
+    //}
+    
+    //7.reduce()累加在陣列中每項元素，將陣列化為單一值。
+    //let reduceArr = [1,2,3];
+    // let newReduceArr = [];
+    // let sum = 0;
+    // reduceArr.forEach(value => {
+    //     sum += value;
+    // });
+    // console.log(sum);
+    // w3schools js reduce
+    // total 加總累積
+    // value 現在的值
+
+    //再一個例子=============
+    //let sum = reduceArr.reduce(function(total,value) {
+    //    console.log('hello reduce');
+    //    console.log(total);
+    //    console.log(value);
+    //    return total + value;       
+    //});
+    //console.log(sum);
+
+    //8. js index array例子
+    //let myArr = [1, 3, 5, 7, 9];
+    // 單一呼叫 array[key]
+    //console.log(myArr[0]); // 1
+    //console.log(myArr[1]); // 3
+    //console.log(myArr[2]); // 5
+    //console.log(myArr[3]); // 7
+
+
+    //9.filter reutrn 條件 vs map return value運算
+    //let filterArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    //let newFilterArr = filterArr.filter(function (value) {
+    // return (value % 2 == 0);
+    // return (value % 2 == 1);
+    //return (value >= 4);
+    //});
+
+    //console.log('filterArr', filterArr);
+    //console.log('newFilterArr', newFilterArr);
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
