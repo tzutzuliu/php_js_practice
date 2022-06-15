@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // 練習二
+    // 建立table
+    // ID 姓名 電話
+
+    document.write(`
+        <table style="width:80%">
+        <tr>
+            <th style="width:10%">ID</th>
+            <th style="width:10%">NAME</th>
+            <th>TEL</th>
+        </tr>
+        `);
+
+    // 練習foreach 顯示 每個obj資料
+    // obj.id or obj['id'] 兩種表達都可以
+        students.forEach(value => {
+            console.log(value);
+            document.write(`
+            <tr>
+               <td>${value.id}</td>
+               <td>${value.name}</td>
+               <td>${value.tel}</td>
+            </tr>
+            `);
+        });
+
+        document.write(`</table>`);
+
+
+   
+
+    
+
+
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    object
+    <script>
+
+        //part1-start=============================
+
+        //js寫法 方式
+        // index arr
+        //const myArr = [1,2,3];
+        //console.log(myArr);
+
+        // index arr方式
+        //const myArr = ['amy','bob','cat'];
+        //console.log(myArr);
+
+        //for in方式 => get key
+        //for (const key in myArr) {
+        //    console.log('hello for in');
+        //    console.log(key);
+        //    console.log(myArr[key]);
+        //}
+
+        //for of方式 => get value
+        //for (const value of myArr) {
+        //    console.log('hello for of');
+        //    console.log(value);
+        //}        
+
+
+        // 關聯式array
+        //const myObj = {
+        //    'a' : 'amy',
+        //    'b' : 'bob',
+        //    'c' : 'cat',
+        //};
+        //console.log(myObj);
+
+
+               // const myObj2 = {
+        //     a: 'amy',
+        //     b: 'bob',
+        //     c: 'cat'
+        // }
+        //console.log(myObj);
+
+        // for in object
+        // 
+        //for (const key in myObj) {
+        //    console.log('hello obj for in');
+        //    console.log(key);
+        //    console.log(myObj[key]);
+        //    console.log(myObj['key']);
+        //}
+        
+        // for of object
+        // object 轉iterable 轉array
+        //let keysObjs = Object.keys(myObj);
+        //let valueObjs = Object.values(myObj);
+        //console.log('keysObjs',keysObjs);
+        //console.log('valueObjs',valueObjs);
+
+        //for (const value of valueObjs) {
+        //    console.log('hello obj for of');
+        //    console.log(value);
+        // console.log(myObj['key']);
+        //}
+
+        // const myArr2 = [
+        //     'key' : 'value',
+        //     'key' : 'value',
+        //     'key' : 'value',
+        //     'key' : 'value',
+        //     'key' : 'value',
+        // ];
+
+        //可參考w3school 有提到https://www.w3schools.com/js/js_object_es5.asp
+
+        //part1-end=============================
+
+
+        //=======================
+        //與php的寫法
+        // <?php
+
+        //index array
+        //$myArr = [1,2,3];
+
+        //關聯式array Associative Array
+            //$myArr = [
+            //    "a" => "amy",
+            //    "b" => "bob",
+            //    "c" => "cat",
+            //    "d" => "dog"
+            //];
+        //?>
+        //=========================
+
+
+        //part2-start=================
+
+        //object.keys
+
+        //let x = 0;
+        //let y = 1;
+        //console.log(x); //都先console.log試看看出來的字串如何
+        //console.log(y);
+
+        //let [a,b] = [3,5];
+        //console.log(a);
+        //console.log(b);
+
+        // Object.keys
+        //const obj = {
+        //    a: 'amy',
+        //    b: 'bob',
+        //    c: 'cat',
+        //}
+
+        //console.log(object.keys(obj));   // get object key => ['a','b','c']
+        //console.log(Object.values(obj)); // get object value => ['amy','bob','cat']
+        //console.log(Object.entries(obj));
+         // get object value => [['a','amy']['b','bob']['c','cat']]
+
+
+        //let entries = object.entries(obj);
+        //const mapArr = entriesArr.map(value => {
+        //    console.log(value);
+        
+            //let[key,value] = values;
+            //    return v;
+
+        //});
+
+        //map
+
+        // map
+        // array map
+        // console.log('entriesArr',entriesArr);
+        //const mapArr = entriesArr.map(value => {
+        //        console.log(value);
+
+        //let [k,v] = value; //['a','amy']
+            // return k; // mapArr = ['a','b','c']
+        //    return v; // mapArr = ['amy','bob','cat']
+
+        //});
+        //     console.log('mapArr',mapArr);
+
+
+
+        // 小練習
+        // 我要顯示map array ['a=>amy','b=>bob','c=>cat']
+
+        // foreach
+        //entriesArr.forEach(value => {
+        //    console.log('hello foreach');
+        //    console.log(value); // [key,value]
+        //    console.log(value[0]); //0 key
+        //    console.log(value[1]); //1 value
+
+        //});
+
+        //part2-start=================
+
+
+        //part3-start=================
+
+        //reduce方法=>全部的array的加總 total + value
+
+        // reduce 我要算這個array 100 - 全部array
+        //let num = [0, 1, 2, 3, 5, 7].reduce(function (total, value) {
+        //        console.log('reduce');
+        //        console.log(total);
+        //        console.log(value); D
+        //    return total - value;
+        //    }, 100);
+            // 100 total 初始直
+            // reduce - 
+            // total 減少 跟 增加
+
+        //         console.log(num); // 18
+
+        //part3-end=================
+
+
+        //part4-start=================
+
+        //一開始會用這種方式寫,但後面一旦資料多時,不適合用此方法寫
+        // let student1 = {
+
+        // };
+
+        // let student2 = {
+        //     'id': 2,
+        //     'name': 'bob',
+        //     'tel': '0922-222-222'
+        // };
+        // [{},{}]
+
+        //適合寫成以下方式
+        let students = [
+            {
+                'id': 1,
+                'name': 'amy',
+                'tel': '0911-111-111'
+            },
+
+            {
+                'id': 2,
+                'name': 'bob',
+                'tel': '0922-222-222'
+            },
+        ];
+
+        //可先用console.log寫看看:
+        // console.log(student1);
+        // console.log(student2);
+        //console.log(students);
+        //console.log(students[0]);
+        //console.log(students[1]);
+
+
+        //練習用一個foreach 顯示 _每個obj資料
+        // obj.id or obj['id'] 兩種表達都可以
+            students.forEach(value => {
+            console.log(value);
+            document.write(value.id);
+            document.write("<br>");
+            document.write(value['name']);
+            document.write("<br>");
+            document.write(value['tel']);
+            document.write("<hr>");
+        });
+
+
+        //============================================
+        //但如果是php的寫法就是 註解掉PHP寫法(START)
+        //foreach($myArr as key => $value){
+        //    print_r($key);
+        //    print_r($value);
+        //}
+
+        //PHP多維陣列(Array)
+        //$students = [
+        //    'id' => 1,
+        //    'name' => 'Jenny',
+        //    'tel' => '0912-345-678',
+        //]
+        //[            
+        //    'id' => 2,
+        //    'name' => 'Bob',
+        //    'tel' => '0922-345-678',
+        //]
+
+        //PHP_function寫法
+        // function
+        //function myFunction()
+        //{
+        //print_r('hello myfunction');
+        //}
+
+
+        //註解PHP寫法(THE END)
+        //=============================================
+
+        //part4-end====================
+
+        //有關於part5在array061501.html
+
+
+
+
+    </script>
+</body>
+</html>

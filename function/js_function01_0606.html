@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //function
+        //function 先宣告
+
+        //function sayHello(){
+        //    document.write('Hello<br>');
+        //}
+
+        //呼叫:
+        //sayHello();
+        //sayHello();
+        //sayHello();
+        //sayHello();
+        //sayHello();
+        //sayHello();
+
+        //note:養成良好習慣先宣告再使用
+
+        //function 丟在變數
+        //let myFunction = function() {
+        //    document.write('Hi<br>');
+        //};
+        //console.log(myFunction);
+
+        //myFunction();
+        //myFunction();
+        //myFunction();
+
+        //functiono放名字的方式
+        //function(name)
+
+        //function sayHelloName (name='Jenny'){
+        //    document.write(`HELLO ${name}<br>`)
+        //}
+
+        
+        //sayHelloByName('Annie');
+        //sayHelloByName('Bonnie');
+        //sayHelloByName('Cathy');
+        //sayHelloByName();
+
+
+        //return value function 方式
+        function sum(num1,num2){
+            return num1 + num2; //如果有碰到return 這個執行後 下面的程式就不會執行
+            return num1 - num2;
+            return num1 * num2;
+            return num1 / num2;
+        }
+
+        let result = sum(5,10);
+        console.log(result);
+
+
+        //有參數的function return練習 (用let myFunction)
+        let myFunction3 = function (num1,num2) {
+            return num1 * num2; //程式只要碰到retun 下面程式就不會執行
+        }
+
+        let myFun3Result = myFunction3(5,4);
+        console.log(myFun3Result);
+
+        //箭頭函式只有在JavaScript有 function改成=>
+        let arrowFun =  (num1, num2) => num1 * num2;
+        let result1 = arrowFun(10,20);
+        let result2 = arrowFun(10,30);
+        console.log(result1);
+        console.log(result2);
+        
+
+    </script>
+
+
+    
+</body>
+</html>
