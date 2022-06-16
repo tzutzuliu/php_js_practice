@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //Object this
+
+        obj = {
+            'id' : 1 ,//變數
+            'name' : 'amy', //變數
+            'fun1' : function(){
+                //console.log('HELLO fun1 ok');
+                console.log('this',this);
+                console.log(this.id);
+                console.log(this.name);
+            },
+            'sum2' :function(n1,n2){
+                return n1 + n2;
+            },
+            'sum2': function (n1 = this.num1, n2 = this.num2) {
+                return n1 + n2;
+            },
+            'arrowFun1': () => {    
+                console.log('arrowFun1');
+                console.log('arrow this',this);
+            },
+            
+        };
+
+
+
+        //obj['fun1'](); 不建議這樣呼叫
+
+        //練習原本的obj
+        //新增兩個變數
+        //num1 , num2
+        //function => sum num1+num2
+
+
+        //通常會用到的都是object this
+        //箭頭函式 this windows 比較少用
+
+
+
+        //function的變數相加,讓宣告的變數呈現
+        //使用return值回傳 才會知道我們存在變數的結果
+
+        //例如:
+        //let result = obj.sum2(200,200);
+        //console.log(result);
+
+        // 在obj this => obj
+        //obj.fun1();
+        //let mySum = obj.sum();
+        //console.log(mySum);
+        //let sum2 = obj.sum2(20, 30);
+        //console.log(sum2);
+
+        //let sum222 = obj.sum2();
+        //console.log(sum222);
+
+
+
+        //外部this => window
+        //console.log('外部this', this);
+
+
+        // 箭頭 this / arrow function
+        // arrow this window
+        //obj.arrowFun1();
+
+
+
+    </script>
+    
+
+
+
+    
+</body>
+</html>
