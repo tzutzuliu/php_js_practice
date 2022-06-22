@@ -3,14 +3,12 @@
     <li><a href="./star_class_console/js_s2022051206.html">JavaScript_Start1</a></li>
     <li><a href="./star_class_console/jsme_0518__star.html">JavaScript_Start2</a></li>
     <li><a href="./star_class_console/js_s20220512008.html">JavaScript_字串相加練習</a></li>
-    <li><a href="./date/js_practice01.html">JavaScript_字串組成練習</a></li>
     <li><a href="./star_class_console/js_save0518_switch.html">Switch初次練習</a></li>
     <li><a href="./star_class_console/js_function.html">function初次練習</a></li>
     <li><a href="./function/js_function01_0606.html">function練習_return</a></li>
     <li><a href="./function/js_object_function_0615.html">object_function</a></li>
     <li><a href="./object_this/js_061601.html">object_this</a></li>
-    <li><a href="./if_else/js_0526practice02.html">if..else條件判斷練習</a></li>
-    <li><a href="./if_else/js_0526practice03.html">條件判斷-三元運算子if..elseif..else</a></li>
+    <li><a href="./if_elseif_else/js_0526practice04.html">if..else條件判斷練習</a></li>
     <li><a href="./if_elseif_else/js_0526practice04.html">條件判斷-三元運算子if..elseif..else</a></li>
     <li><a href="./for/js_0601_for_i_up.html">for迴圈練習</a></li>
     <li><a href="./for/js_0601_for_i_up02.html">for迴圈練習-畫星星[巢狀迴圈]</a></li>
