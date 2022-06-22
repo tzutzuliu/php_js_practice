@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Document Object_note</title>
+</head>
+
+<body>
+
+    <h1>The Document Object</h1>
+    <h2>The addEventListener() Method</h2>
+
+
+    <script>
+        //The addEventListener() Method
+        document.addEventListener("click", myFunction1);
+        document.addEventListener("click", myFunction2);
+
+    function myFunction1() {
+        document.getElementById("demo").innerHTML += "First function was executed! "
+    }
+
+    function myFunction2() {
+        document.getElementById("demo").innerHTML += "Second function was executed! "
+    }
+    // function 
+    // 1.不綁定 
+        function add() {
+            alert('add');
+        }
+
+    //2.綁定 addEventLister        
+        // const myBtn = document.getElementById('myBtn');
+        // // addEventListener() function;
+        // // addEventListener(變數1,變數2) function;
+        // // 變數1 event click submit dbclick keyUp mouseOver....
+        // // 變數2 一整個funciton
+
+    // // 2-1 原本的 基本的寫法
+        // myBtn.addEventListener('click', function () {
+        //     // alert('hello');
+        //     add();
+        // });
+
+
+    // // 2-2另一種寫法
+        // myBtn.addEventListener('click', add);
+        // console.log(add); //一整個function
+        // console.log(add()); //呼叫function
+
+    </script>
+
+    
+</body>
+</html>

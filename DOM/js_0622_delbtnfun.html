@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1" onclick="delP1()">
+            P1 Lorem ipsum dolor sit amet.
+        </p>
+        <p id="p2" onclick="delP2()">
+            P2 Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <p>
+        <button type="button">addBtn</button>
+    </p>
+    <p>
+        <button type="button" onclick="JS">delBtn</button>
+        <!-- <button type="button" onclick="alert('hello')">delBtn</button> -->
+    </p>
+
+
+    <script>
+        // delBtnFun
+           function delBtnFun(){
+        // 刪除節點
+            console.log('delBtnFun ok');
+            p2.remove();
+        };
+
+        function delP(element){
+            console.log('delP ok');
+            console.log(this);
+            console.log('element',element);
+            element.remove();
+        }
+
+        // function delP1(){
+        //     p1.remove();
+        // };
+
+        // function delP2(){
+        //     p2.remove();
+        // };
+        
+        const p1 = document.getElementById('p1');
+        const p2 = document.getElementById('p2');
+
+    </script>
+    
+</body>
+</html>
