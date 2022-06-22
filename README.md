@@ -50,10 +50,10 @@
     字串相加 "Hello" + name
 * Python變數宣告:直接宣告
 * 例如:
->>a=5
->>b=a
->>print(b)
->>answer:5
+    >>a=5
+    >>b=a
+    >>print(b)
+    >>answer:5
 * alert()彈出對話視窗,但無法輸入資料
 * prompt()彈出對話視窗,讓使用者可以輸入資料 
 * prompt('對話框的提示文字',"對話框輸入欄位的預設值")
