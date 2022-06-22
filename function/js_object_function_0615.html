@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //object function
+        //常用object + function => this => object
+        //程式碼要吃到object裡的變數,要記得用this
+        //object裡的 this最常用
+        
+        //這個寫法目前式JavaScript常用的object_function寫法
+        let student = {
+            id : 1,
+            name : 'Jenny',
+            fn1 : function(){
+                //document.write(`hello<br>`);
+                console.log('this',this);
+                document.write(`hello ${this.name}<br>`);
+            }
+                //fnArrow : value => {
+            
+                //console.log('fnArrow this',this);
+
+        }
+        //}
+
+        //js 比較難理解的地方
+
+        student.fn1();
+        student.fnArrow();
+
+            function exFunction (){
+                console.log('exFunction this',this); 
+            }
+            exFunction()
+
+
+
+
+
+    </script>
+    
+
+
+    
+</body>
+</html>
