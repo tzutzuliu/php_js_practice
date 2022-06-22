@@ -1,7 +1,7 @@
 ## JavaScript 課程練習
 <ul>
     <li><a href="./star_class_console/js_s2022051206.html">JavaScript_Start1</a></li>
-    <li><a href="jsme_0518__star.html">JavaScript_Start2</a></li>
+    <li><a href="./star_class_console/jsme_0518__star.html">JavaScript_Start2</a></li>
     <li><a href="js_s20220512008.html">JavaScript_字串相加練習</a></li>
     <li><a href="js_practice01.html">JavaScript_字串組成練習</a></li>
     <li><a href="js_save0518_switch.html">Switch初次練習</a></li>
