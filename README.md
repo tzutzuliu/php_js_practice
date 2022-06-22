@@ -52,8 +52,8 @@
 * 例如:
     >>a=5<br>
     >>b=a<br>
-    >>print(b)
-    >>answer:5
+    >>print(b)<br>
+    >>answer:5<br>
 * alert()彈出對話視窗,但無法輸入資料
 * prompt()彈出對話視窗,讓使用者可以輸入資料 
 * prompt('對話框的提示文字',"對話框輸入欄位的預設值")
