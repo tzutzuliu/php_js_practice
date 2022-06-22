@@ -25,8 +25,6 @@
     <li><a href="./for/js_0601practice01.html">Switch..case練習</a></li>
     <li><a href="./for/js_0601practice02.html">Switch..case_HW</a></li>
     <li><a href="./sweetalert/js_sweetalert.html">sweetalert小練習</a></li>
-    <li><a href="./date/js_0526practice.html">JavaScript日期時間練習1</a></li>
-    <li><a href="./date/js_practice02.html">JavaScript日期時間練習2</a></li>
     <li><a href="./onclick/js0519.html">On Click事件[觸發事件]</a></li>
     <li><a href="./onclick/js0519-4.html">點餐製作練習</a></li>
     <li><a href="./array/js_0609_practice01_hw.html">綜合迴圈HW-All</a></li>
@@ -38,8 +36,8 @@
     <li><a href="./array/js0609_array03_filiter.html">Array_filiter</a></li>
     <li><a href="./array/js0609_index_array.html">Array_note1</a></li>
     <li><a href="./array/array_practice0615/array_note.html">Array_note2</a></li>
-    <li><a href="js0609_push_pop_array.html">Array_splice</a></li>
-    <li><a href="js_061602_DOM.html">Document Object Model練習</a></li>
+    <li><a href="./array/js0609_push_pop_array.html">Array_splice</a></li>
+    <li><a href="./DOM/js_061602_DOM.html">Document Object Model練習</a></li>
 
 </ul>
 
